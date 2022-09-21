@@ -1,0 +1,121 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --primary-color: white;
+  --secondary: rgb(56, 166, 157);
+  --dark: rgb(33, 29, 29);
+}
+
+body {
+  background-color: rgb(239, 232, 232);
+}
+
+/* Display-flex and content center */
+.display-flex-space-between {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+
+.header .nav-bar {
+  height: 80px;
+  background-color: var(--secondary);
+  padding: 0 140px;
+}
+
+/* .nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+} */
+
+.nav-bar .logo {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 25px;
+  /* transition: 0.3sec; */
+  transform: scale(1.5);
+}
+
+.nav-bar .logo a:hover {
+  border-bottom: 1px solid white;
+}
+
+.nav-list li {
+  list-style: none;
+  /* color: white; */
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-list li a:hover {
+  border-bottom: 1px solid white;
+}
+
+.download {
+  height: 500px;
+  background-color: white;
+  margin: 0 80px;
+}
+
+h2 {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.download button {
+  margin: 20px 470px;
+  padding: 10px 12px;
+  border-radius: 50px;
+  border: none;
+  color: white;
+  background-color: var(--secondary);
+  cursor: pointer;
+}
+
+.download button:hover {
+  background-color: rgb(35, 128, 133);
+}
+
+.download span {
+  margin: 10px 500px;
+  display: block;
+}
+
+.download a {
+  text-decoration: none;
+  color: rgb(84, 167, 200);
+  margin: 10px 460px;
+}
+
+.footer {
+  height: 300px;
+  /* margin-top: -30px; */
+  display: flex;
+  justify-content: space-evenly;
+  gap: 65px;
+  background-color: rgb(27, 15, 36);
+  color: white;
+}
+
+.footer .footer-item {
+  list-style: none;
+}
+
+.footer-item h5 {
+  margin: 20px 0;
+}
+
+.footer-item li {
+  line-height: 30px;
+}
